@@ -24,9 +24,9 @@ imageElement.setAttribute("alt", "Profile Image of ${fullName}")
 
 /* Step 5 - Array */
 
-let favFood= ['BBQ ', 'Chicken and Rice' , 'Pepperoni Pizza' , 'Cheescake ', 'Empanadas'];
+let favFood= ['BBQ', ' Chicken and Rice', ' Pepperoni Pizza', ' Cheescake', ' Empanadas'];
 foodElement.innerHTML += `<br> ${favFood}`;
-const f1 = 'Burger';
+const f1 = ' Burger';
 favFood.push(f1);
 foodElement.innerHTML += `<br> ${favFood}`;
 favFood.shift();
