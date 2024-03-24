@@ -80,7 +80,7 @@ myprofile.favoriteFoods.forEach(food=>{
 /* Hobbies List */
 
 myprofile.hobbies.forEach(hobby=>{
-    const ul = document.createElement('ul');
+    const ul = document.createElement('li');
     ul.textContent = hobby;
     document.querySelector('#hobbies').appendChild(ul);
 });
