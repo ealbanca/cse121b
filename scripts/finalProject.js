@@ -1,4 +1,4 @@
-/* W05: Programming Tasks */
+/* Final Project- Edwin Hared Albancando Robles*/
 
 /* Declare and initialize global variables */
 
@@ -6,17 +6,17 @@ let jobsElement = document.getElementById('jobs');
 let jobList = [];
 
 
-/* async displayTemples Function */
+/* async displayJobs Function */
 
 const displayJobs = (jobs) => {
     jobs.forEach((job) => {
         /*Create an HTML <article> element (createElement).*/
         let btn = document.createElement('button');
 
-        /*Create an HTML <h3> element and add the temple's templeName property to this new element.*/
+        /*Create HTML elements and add the properties to them from the json file.*/
         let h3 = document.createElement('h3');
         h3.textContent = job.jobTitle;
-        /*Create an HTML <img> element and add the temple's imageUrl property to the src attribute and the temple's location property to the alt attribute.*/
+        
         let companyName = document.createElement('company');
         companyName.textContent = job.company;
 
@@ -29,21 +29,22 @@ const displayJobs = (jobs) => {
         let jobLink = document.createElement('joburl');
         jobLink = job.jobUrl;
 
+        /*Added EventListener to the button*/
         btn.addEventListener('click', () => { window.open(jobLink) });
 
 
-        /*Append the <h3> element and the <img> element to the <article> element as children. (appendChild)*/
+        /*Append all the Job elements to the button*/
         btn.appendChild(h3);
         btn.appendChild(companyName);
         btn.appendChild(jobLocation);
         btn.appendChild(jobSalary);
 
-        /*Append the <article> element to the global templesElement variable*/
+        /*Append the buton element to the global jobsElement variable*/
         jobsElement.appendChild(btn);
     });
 }
 
-/* async getTemples Function using fetch()*/
+/* async getJobs Function using fetch()*/
 const getJobs = async () => {
     const response = await fetch(src = "joblist.json");
     jobList = await response.json();
@@ -57,11 +58,10 @@ const reset = () => {
 };
 
 
-
-/* filterTemples Function */
+/* filterJobsByTitle function with specified cases */
 
 const filterJobsByTitle = () => {
-    /*In this function, first call the reset function to clear the output.*/
+
     reset();
     let filter = document.getElementById('filtered').value;
     let arrayToDisplay;
@@ -98,8 +98,11 @@ const filterJobsByTitle = () => {
 
 }
 
+
+/* filterJobsBySalary function with specified cases */
+
 const filterJobsBySalary = () => {
-    /*In this function, first call the reset function to clear the output.*/
+    
     reset();
     let filter2 = document.getElementById('filtered2').value;
     let arrayToDisplay;
@@ -137,8 +140,9 @@ const filterJobsBySalary = () => {
 }
 
 
+/* filterJobsByLocation function with specified cases */
 const filterJobsByLocation = () => {
-    /*In this function, first call the reset function to clear the output.*/
+    
     reset();
     let filter3 = document.getElementById('filtered3').value;
     let arrayToDisplay;
@@ -183,9 +187,10 @@ const filterJobsByLocation = () => {
 
 }
 
+/*called getJobs function to display all jobs*/
 getJobs();
 
-/* Event Listener */
+/* Defined Event Listeners for every filter button */
 document.querySelector('#filtered').addEventListener('change', () => { filterJobsByTitle(jobList) });
 
 document.querySelector('#filtered2').addEventListener('change', () => { filterJobsBySalary(jobList) });
