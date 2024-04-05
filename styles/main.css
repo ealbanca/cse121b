@@ -279,40 +279,6 @@ footer {
     margin: .5rem;
 }
 
-/* Media Queries */
-@media only screen and (min-width: 32.5em) {
-    nav ul {
-        flex-direction: row;
-    }
-
-    nav ul li:first-child {
-        display: none;
-    }
-
-    nav ul li {
-        display: block;
-    }
-
-    section {
-        min-width: 300px;
-    }
-
-    #home {
-        margin: 100px auto 20px;
-        grid-template-columns: 250px 1fr;
-        max-width: -moz-fit-content;
-        max-width: fit-content;
-    }
-
-    #task3 {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 5px;
-        margin: 0 auto;
-        max-width: 950px;
-    }
-
-}
 
 /* Fiinal project styles*/
 
@@ -362,5 +328,38 @@ company {
 }
 
 
+/* Media Queries */
+@media only screen and (min-width: 32.5em) {
+    nav ul {
+        flex-direction: row;
+    }
 
+    nav ul li:first-child {
+        display: none;
+    }
+
+    nav ul li {
+        display: block;
+    }
+
+    section {
+        min-width: 300px;
+    }
+
+    #home {
+        margin: 100px auto 20px;
+        grid-template-columns: 250px 1fr;
+        max-width: -moz-fit-content;
+        max-width: fit-content;
+    }
+
+    #task3 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 5px;
+        margin: 0 auto;
+        max-width: 950px;
+    }
+
+}
 
