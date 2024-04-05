@@ -324,7 +324,22 @@ company {
 }
 
 #filtered {
-    margin-top: auto;
+    width: 7%;
+    align-items: center;
+    background-color: #044389;
+    color: white;
+}
+
+#filtered2 {
+    width: 7%;
+    background-color: #044389;
+    color: white;
+}
+
+#filtered3 {
+    width: 7%;
+    background-color: #044389;
+    color: white;
 }
 
 
