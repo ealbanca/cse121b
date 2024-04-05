@@ -313,3 +313,54 @@ footer {
     }
 
 }
+
+/* Fiinal project styles*/
+
+button {
+    height: 150px;
+    width: 72%;
+    margin: .5rem;
+    border: 1px solid rgba(0, 0, 0, .1);
+    color: #000000;
+    padding: 0.5rem;
+    background-color: #ffffffd8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 5cap;
+    margin-left: auto;
+    margin-right: 100px;
+    
+}
+
+#jobs {
+    display: grid;
+    grid-template-columns: minmax(300px, 1fr);
+    grid-gap: .5rem;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+company {
+    font-weight: bold;
+    font-size: 16px;
+    color: #044389;
+}
+
+#imageTitle {
+    width: 50%;
+    display: grid;
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#filtered {
+    margin-top: auto;
+}
+
+
+
+

@@ -2,53 +2,71 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CSE 121b | W05: Programming Tasks</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="styles/main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSE 121b | Final Project Aplication</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
 </head>
 
 <body>
-  <nav>
-    <ul id="menu">
-      <li><a id="toggleMenu">&equiv;</a></li>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="w01-task.html">W1 Task</a></li>
-      <li><a href="w03-task.html">W3 Task</a></li>
-      <li><a href="w04-task.html">W4 Task</a></li>
-      <li><a href="w05-task.html" class="active">W5 Task</a></li>
-      <li><a href="project.html">Project</a></li>
-    </ul>
-  </nav>
-  <main id="gridly">
-    <h1>W05: Programming Tasks</h1>
-    <h2>Fetch(): Some Latter-day Temples</h2>
+    <nav>
+        <ul id="menu">
+            <li><a id="toggleMenu">&equiv;</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="w01-task.html">W1 Task</a></li>
+            <li><a href="w03-task.html">W3 Task</a></li>
+            <li><a href="w04-task.html">W4 Task</a></li>
+            <li><a href="w05-task.html" class="active">W5 Task</a></li>
+            <li><a href="project.html">Project</a></li>
+        </ul>
+    </nav>
+    <main id="gridly">
+        <h1>Final Project Aplication</h1>
+        <div id="image-box">
+            <img id= "imageTitle" src="images/Title.png" alt="TheBestJobYouCanFind.com">
+        </div>
 
-    <select id="filtered" title="Choose a data filter.">
-      <option value="" disabled selected>Filter Temples</option>
-      <option value="utah">Utah</option>
-      <option value="notutah">Outside of Utah</option>
-      <option value="older">Built Before 1950</option>
-      <option value="all">No Filter</option>
-    </select>
+        <select id="filtered" title="Choose a data filter.">
+            <option value="" disabled selected>Filter by Title</option>
+            <option value="manager">Manager</option>
+            <option value="developer">Developer</option>
+            <option value="engineer">Engineer</option>
+            <option value="all">No Filter</option>
+        </select>
 
-    <div id="temples">
-    </div>
-  </main>
+        <select id="filtered2" title="Choose a data filter 2.">
+            <option value="" disabled selected>Filter by Salary</option>
+            <option value="50000">50000 - 75000</option>
+            <option value="75000">75000 - 100000</option>
+            <option value="more">More than 100000</option>
+            <option value="all">No Filter</option>
+        </select>
+
+        <select id="filtered3" title="Choose a data filter 3.">
+            <option value="" disabled selected>Filter by Location</option>
+            <option value="FL">Florida</option>
+            <option value="GA">Georgia</option>
+            <option value="NC">North Carolina</option>
+            <option value="NY">New York</option>
+            <option value="all">No Filter</option>
+        </select>
+
+        <div id="jobs">
+        </div>
+    </main>
 
 
-  <footer>
-    &copy;<span id="year"></span> | Week 05 - Fetching Temple Data | CSE 121b
-  </footer>
-  <script src="scripts/main.js"></script>
-  <script>
-    document.getElementById("year").innerHTML = new Date().getFullYear();
-  </script>
-  <script src="scripts/w05-task.js"></script>
+    <footer>
+        &copy;<span id="year"></span> | Final Project Aplication | CSE 121b
+    </footer>
+    <script src="scripts/main.js"></script>
+    <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
+    <script src="scripts/Final Project Application.js"></script>
 </body>
 
 </html>
